@@ -1,0 +1,17 @@
+graph LR
+implementation["Implementation (5d)"]
+requirement_approved["Requirement Approved (2d)"]
+design_phase["Design Phase (3d)"]
+testing["Testing (2d)"]
+integration["Integration (3d)"]
+vendor_setup["Vendor Setup (4d)"]
+design_phase --> implementation
+requirement_approved --> design_phase
+implementation --> testing
+vendor_setup --> testing
+vendor_setup --> integration
+classDef critical fill:#ff6666,stroke:#aa0000;
+class implementation critical
+class requirement_approved critical
+class design_phase critical
+class testing critical
